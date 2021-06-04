@@ -26,7 +26,7 @@ section.section-page-header {
     padding-top: 2rem;
     padding-bottom: 0rem;
     /* border-top: 1px solid; */
-/*    border-color: #000000;*/
+    /*    border-color: #000000;*/
     background-color: #333333;
 }
 
@@ -48,9 +48,27 @@ section.slider{
     position: relative;
 }
 section.slider .slider-showcase{;
-    background-color: rgba(0, 0, 0, 1);
-    padding: 30px 45px;
+                                background-color: rgba(0, 0, 0, 1);
+                                padding: 30px 45px;
 }
+section.main-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.bg-gray{
+    background-color: #dddddd;
+}
+
+section .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+
 @media only screen and (min-width: 1030px){
     section.slider .slider-showcase{
         position: absolute;
@@ -582,7 +600,7 @@ section.slider .slider-showcase{;
     color: #000000; 
 }
 .site-footer a:hover {
-    color: #ff926b; 
+    color: #007bff;
 }
 .site-footer .widget {
     margin-bottom: 30px; 
@@ -717,4 +735,47 @@ section.slider .slider-showcase{;
 .trusted-by-companies {
     padding: 6rem 0;
     text-align: center; 
+}
+
+/*********************
+**********************/
+#faq-panels .panel { 
+    margin: 0; 
+}
+#faq-panels .panel-heading { 
+    padding: 0; 
+    border-bottom: 1px solid #b4b4b4;
+}
+#faq-panels .panel-heading a {
+    display: block;
+    vertical-align: middle;
+    padding: 10px 0 5px 0px;
+    color: #000000;
+    font-weight: 500;
+}
+#faq-panels .panel-heading a .question-button {
+    float: right;
+    position: relative;
+    right: 1rem;
+}
+#faq-panels .panel-heading a .question-button i { font-size: 28px; }
+#faq-panels .panel-heading a .question-button i:before { content: ""; }
+#faq-panels .panel-heading a.collapsed i:before { content: ""; }
+#faq-panels .panel-heading a:after { content: ""; display: table; clear: both; }
+#faq-panels .panel-collapse { 
+    margin-bottom: 0;
+    padding-bottom: 10px; 
+    background: #ffffff; 
+    padding: 15px 20px 5px;
+    color: #000000;
+}
+#faq-panels .panel-collapse p { margin-bottom: 0; padding-bottom: 10px; }
+
+section.contact-support a.play-video {
+    text-align: center;
+    background: #007bff;
+    padding: 26px 30px 26px 32px;
+    border-radius: 5rem;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #dddddd;
 }
